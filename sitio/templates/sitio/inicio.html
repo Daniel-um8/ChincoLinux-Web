@@ -1,0 +1,87 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChincoLinux</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      overflow-x: hidden;
+    }
+
+    .hero {
+      height: 100vh;
+      background-color: #e3f2f9;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero img {
+      max-width: 200px;
+      margin-bottom: 1rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin: 0;
+      color: #111;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 0.3s;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #333;
+      margin-top: 1rem;
+      max-width: 600px;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 0.6s;
+    }
+
+    .hero a.boton {
+      margin-top: 2rem;
+      padding: 0.8rem 2rem;
+      background-color: #4da8da;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 1s ease-out forwards;
+      animation-delay: 0.9s;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <img src="{% static 'chincolinux.png' %}" alt="ChincoLinux Logo">
+    <h1>ChincoLinux</h1>
+    <p>Una distribución educativa libre para todas las aulas de Chile</p>
+    <a class="boton" href="https://github.com/Daniel-um8/ChincoLinux/releases/tag/v1.0-alpha" target="_blank">Descargar ISO - Versión Alfa</a>
+  </section>
+</body>
+</html>
