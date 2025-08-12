@@ -298,3 +298,110 @@
           background: #eef7fc;
           border-radius: 10px;
       }
+
+      /* ===== Origen del nombre ===== */
+      .origin {
+          background: #fff;
+      }
+
+      .origin .story {
+          background: #fafafa;
+          border: 1px solid #eee;
+          border-radius: 16px;
+          padding: 1.5rem;
+          box-shadow: 0 6px 18px rgba(0, 0, 0, .05);
+      }
+
+      .origin .side-img {
+          text-align: center;
+      }
+
+      .origin .side-img img {
+          max-width: 380px;
+          width: 100%;
+          border-radius: 16px;
+      }
+
+      /* ===== Estado del proyecto ===== */
+      .state {
+          background: #fff;
+      }
+
+      .checklist {
+          display: grid;
+          gap: .75rem;
+          margin-top: 1rem;
+      }
+
+      .check {
+          display: flex;
+          gap: .6rem;
+          align-items: flex-start;
+          background: #f9f9f9;
+          border: 1px solid #eee;
+          border-radius: 12px;
+          padding: .8rem 1rem;
+      }
+
+      .check .tick {
+          font-size: 1.1rem;
+      }
+
+      /* ===== Contribuye ===== */
+      .contrib {
+          background: #fff;
+      }
+
+      .contrib-grid {
+          display: grid;
+          gap: 1.25rem;
+          grid-template-columns: repeat(2, 1fr);
+      }
+
+      @media (max-width: 900px) {
+          .contrib-grid {
+              grid-template-columns: 1fr;
+          }
+      }
+
+      .contrib-card {
+          background: #fafafa;
+          border: 1px solid #eee;
+          border-radius: 16px;
+          padding: 1.25rem;
+          box-shadow: 0 6px 18px rgba(0, 0, 0, .05);
+          transition: transform .18s ease, box-shadow .18s ease, border-color .18s ease;
+      }
+
+      .contrib-card:hover {
+          transform: translateY(-3px);
+          box-shadow: 0 12px 28px rgba(0, 0, 0, .07);
+          border-color: #e6e6e6;
+      }
+
+      /* ===== Licencia & Footer ===== */
+      .license {
+          background: #fff;
+      }
+
+      .footer {
+          background: #111;
+          color: #ddd;
+          padding: 2rem 1.5rem;
+          text-align: center;
+      }
+
+      .footer a {
+          color: #fff;
+          text-decoration: none;
+          font-weight: 700;
+      }
+
+      .footer a:hover {
+          text-decoration: underline;
+      }
+
+      /* util */
+      .spacer {
+          height: 2rem;
+      }
