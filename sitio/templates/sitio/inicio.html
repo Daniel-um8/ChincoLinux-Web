@@ -36,6 +36,143 @@
         </div>
       </div>
     </section>
+
+    <section class="section features" id="caracteristicas">
+      <div class="container">
+        <div class="reveal from-left">
+          <div class="kicker">Características</div>
+          <h2 class="title">Lo esencial de ChincoLinux</h2>
+          <p class="lead">Una distro basada en Debian, enfocada en el aula chilena: simple, útil y lista para aprender.</p>
+        </div>
+
+        <div class="features-grid">
+          <!-- Contenido educativo actualizado -->
+          <article class="feature-card reveal from-left">
+            <div class="feature-icon">📚</div>
+            <h3 class="feature-title">Contenido educativo actualizado</h3>
+            <p class="feature-text">Incluye el programa del año en curso del MINEDUC y libros por asignatura para acompañar el aprendizaje.</p>
+            <span class="badge">MINEDUC</span>
+            <span class="badge">Libros</span>
+          </article>
+
+          <!-- Entorno amigable -->
+          <article class="feature-card reveal from-right">
+            <div class="feature-icon">🖥️</div>
+            <h3 class="feature-title">Entorno amigable y familiar</h3>
+            <p class="feature-text">Escritorio similar a Windows para facilitar la transición de nuevas y nuevos usuarios al mundo Linux.</p>
+            <span class="badge">Onboarding fácil</span>
+          </article>
+
+          <!-- Software preinstalado -->
+          <article class="feature-card reveal from-left">
+            <div class="feature-icon">🧰</div>
+            <h3 class="feature-title">Software preinstalado</h3>
+            <p class="feature-text">Pensado para ciencia, tecnología y humanidades:</p>
+            <ul class="feature-list">
+              <li>Fritzing (circuitos), Thonny (Python), Scratch</li>
+              <li>LibreOffice, GCompris, Kalzium, GeoGebra</li>
+              <li>Krita, KeePassXC</li>
+            </ul>
+          </article>
+
+          <!-- Optimizada para bajos recursos -->
+          <article class="feature-card reveal from-right">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">Optimizada para equipos modestos</h3>
+            <p class="feature-text">Ligera y eficiente para reutilizar computadores en laboratorios y aulas digitales.</p>
+            <span class="badge">Bajos recursos</span>
+          </article>
+
+          <!-- ISO pública -->
+          <article class="feature-card reveal from-left">
+            <div class="feature-icon">📦</div>
+            <h3 class="feature-title">ISO pública y de libre descarga</h3>
+            <p class="feature-text">Distribución abierta para probar en Live USB o en máquinas virtuales.</p>
+            <a class="boton" href="https://github.com/Daniel-um8/ChincoLinux/releases/tag/v1.0-alpha" target="_blank" rel="noopener">Descargar ISO</a>
+          </article>
+
+          <!-- Manual PDF -->
+          <article class="feature-card reveal from-right">
+            <div class="feature-icon">📘</div>
+            <h3 class="feature-title">Manual PDF introductorio</h3>
+            <p class="feature-text">Guía de uso básico para quienes recién comienzan (en desarrollo).</p>
+            <span class="badge">Inicio rápido</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section howto" id="instrucciones">
+  <div class="container">
+    <div class="reveal from-left">
+      <div class="kicker">Cómo probar ChincoLinux</div>
+      <h2 class="title">Live USB (recomendado) o Máquina Virtual</h2>
+      <p class="lead">Arranca desde un pendrive sin instalar nada, o pruébalo en una VM como VirtualBox, VMware o GNOME Boxes.</p>
+    </div>
+
+    <div class="steps">
+      <!-- Paso 1 -->
+      <article class="step reveal from-left">
+        <div class="feature-icon">⬇️</div>
+        <h3>Paso 1 — Descarga la ISO</h3>
+        <p>Obtén la imagen desde el repositorio oficial.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://github.com/Daniel-um8/ChincoLinux/releases/tag/v1.0-alpha" target="_blank" rel="noopener">Descargar ISO</a>
+        </div>
+      </article>
+
+      <!-- Paso 2 -->
+      <article class="step reveal from-right">
+        <div class="feature-icon">💿</div>
+        <h3>Paso 2 — Crea un Live USB</h3>
+        <p>Graba la <code>.iso</code> en un pendrive (≥4GB) con tu herramienta favorita.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://rufus.ie/es/" target="_blank" rel="noopener">Rufus (Windows)</a>
+          <a class="cta" href="https://etcher.balena.io/" target="_blank" rel="noopener">balenaEtcher</a>
+        </div>
+      </article>
+
+      <!-- Paso 3 -->
+      <article class="step reveal from-left">
+        <div class="feature-icon">⚙️</div>
+        <h3>Paso 3 — Arranca desde USB</h3>
+        <p>Reinicia tu equipo, entra al menú de arranque y selecciona el pendrive como dispositivo de inicio.</p>
+      </article>
+
+      <!-- Opción VM -->
+      <article class="step reveal from-right">
+        <div class="feature-icon">🖥️</div>
+        <h3>Opción — Máquina Virtual</h3>
+        <p>Si prefieres, monta la ISO en una VM.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://www.virtualbox.org/" target="_blank" rel="noopener">VirtualBox</a>
+          <a class="cta" href="https://www.vmware.com/" target="_blank" rel="noopener">VMware</a>
+          <a class="cta" href="https://apps.gnome.org/app/org.gnome.Boxes/" target="_blank" rel="noopener">GNOME Boxes</a>
+        </div>
+      </article>
+
+      <!-- Requisitos -->
+      <article class="step reveal from-left">
+        <div class="feature-icon">🧩</div>
+        <h3>Requisitos sugeridos</h3>
+        <p>CPU x64, 4GB RAM (8GB ideal), 16GB de espacio libre, pendrive ≥4GB para Live USB.</p>
+      </article>
+
+      <!-- Sugerencias -->
+      <article class="step reveal from-right">
+        <div class="feature-icon">💡</div>
+        <h3>Consejos útiles</h3>
+        <p>Si no ves el USB en el arranque, revisa el modo UEFI/Legacy o el “Secure Boot”.</p>
+      </article>
+    </div>
+
+    <div class="note reveal from-left">
+      ⚠️ Versión Alfa: puede contener errores. Agradecemos reportes y sugerencias en GitHub.
+    </div>
+  </div>
+</section>
+
+
     <script src="{% static 'sitio/js/script.js' %}"></script>
   </body>
 </html>
