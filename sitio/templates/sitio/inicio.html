@@ -4,6 +4,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO básico -->
+    <meta name="title" content="ChincoLinux — Distribución educativa basada en Debian" />
+    <meta name="description" content="ChincoLinux es una distribución Linux para el ámbito educativo chileno: libre, accesible y amigable. Incluye programa MINEDUC, libros y software para aprender." />
+
+    <!-- Canonical (ajústalo cuando tengas dominio/URL final) -->
+    <link rel="canonical" href="https://tu-dominio-o-github-pages/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="ChincoLinux" />
+    <meta property="og:title" content="ChincoLinux — Distribución educativa basada en Debian" />
+    <meta property="og:description" content="Distro educativa libre para aulas de Chile. Programa MINEDUC, libros y software preinstalado." />
+    <meta property="og:image" content="{{ request.scheme }}://{{ request.get_host }}{% static 'sitio/img/chincolinux.png' %}" />
+    <meta property="og:image:alt" content="Logo de ChincoLinux" />
+    <!-- Si ya tienes dominio, cambia la siguiente por la URL pública -->
+    <meta property="og:url" content="https://tu-dominio/" />
+
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="ChincoLinux — Distribución educativa basada en Debian" />
+    <meta name="twitter:description" content="Distro educativa libre para aulas de Chile." />
+    <meta name="twitter:image" content="{{ request.scheme }}://{{ request.get_host }}{% static 'sitio/img/chincolinux.png' %}" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/svg+xml" href="{% static 'sitio/img/favicon.svg' %}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'sitio/img/favicon-32.png' %}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'sitio/img/favicon-16.png' %}" />
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'sitio/img/apple-touch-icon.png' %}" />
+    <meta name="theme-color" content="#4da8da" />
+
+    <!-- Preload de imagen crítica (Hero) -->
+    <link rel="preload" as="image" href="{% static 'sitio/img/chincolinux.png' %}" />
+
+    <!-- Opcional: Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet" />
+
     <link rel="stylesheet" href="{% static 'sitio/css/estilo.css' %}" />
     <title>ChincoLinux</title>
   </head>
