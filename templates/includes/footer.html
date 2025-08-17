@@ -1,7 +1,14 @@
-    <footer class="footer">
-      <div class="container">
-        <p>
-          © {{ now|date:'Y' }} ChincoLinux — Un proyecto de <a href="https://github.com/Daniel-um8" target="_blank" rel="noopener">Daniel-um8</a>
-        </p>
-      </div>
-    </footer>
+{% load static %}
+
+<footer class="footer">
+  <div class="container">
+    <!-- Imagen centrada -->
+    <div class="footer-logo">
+      <img src="{% static 'sitio/img/chincol_sl2.png' %}" alt="ChincoLinux" />
+    </div>
+    <p>
+      Ɔ {{ now|date:'Y' }} ChincoLinux — Un proyecto de 
+      <a href="https://github.com/Daniel-um8" target="_blank" rel="noopener">Daniel-um8</a>
+    </p>
+  </div>
+</footer>
