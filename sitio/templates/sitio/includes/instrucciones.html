@@ -1,0 +1,69 @@
+{% load static %}
+
+<section class="section howto" id="instrucciones">
+  <div class="container">
+    <div class="reveal from-left" id="instrucciones-container">
+      <div class="kicker">Instalación</div>
+      <h2 class="title">Live USB o Máquina Virtual</h2>
+      <p class="lead">Arranca desde un pendrive sin instalar nada, o pruébalo en una VM como VirtualBox, VMware o GNOME Boxes.</p>
+    </div>
+
+    <div class="steps">
+      <!-- Paso 1 -->
+      <article class="step reveal from-left">
+        <div class="feature-icon"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/4bb67a/download.png" alt="download"/></div>
+        <h3>Paso 1 — Descarga la ISO</h3>
+        <p>Obtén la imagen desde el repositorio oficial.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://github.com/Daniel-um8/ChincoLinux/releases/tag/v1.0-alpha" target="_blank" rel="noopener">Descargar ISO</a>
+        </div>
+      </article>
+
+      <!-- Paso 2 -->
+      <article class="step reveal from-right">
+        <div class="feature-icon"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/4bb67a/usb-memory-stick.png" alt="usb-memory-stick"/></div>
+        <h3>Paso 2 — Crea un Live USB</h3>
+        <p>
+          Graba la <code>.iso</code> en un pendrive (≥4GB) con tu herramienta favorita.
+        </p>
+        <div class="cta-row">
+          <a class="cta" href="https://rufus.ie/es/" target="_blank" rel="noopener">Rufus (Windows)</a>
+          <a class="cta" href="https://etcher.balena.io/" target="_blank" rel="noopener">balenaEtcher</a>
+        </div>
+      </article>
+
+      <!-- Paso 3 -->
+      <article class="step reveal from-left">
+        <div class="feature-icon"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/4bb67a/bios.png" alt="bios"/></div>
+        <h3>Paso 3 — Arranca desde USB</h3>
+        <p>Reinicia tu equipo, entra al menú de arranque y selecciona el pendrive como dispositivo de inicio.</p>
+      </article>
+
+      <!-- Opción VM -->
+      <article class="step reveal from-right">
+        <div class="feature-icon"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/4bb67a/virtual-machine.png" alt="virtual-machine"/></div>
+        <h3>Opción — Máquina Virtual</h3>
+        <p>Si prefieres, monta la ISO en una VM.</p>
+        <div class="cta-row">
+          <a class="cta" href="https://www.virtualbox.org/" target="_blank" rel="noopener">VirtualBox</a>
+          <a class="cta" href="https://apps.gnome.org/app/org.gnome.Boxes/" target="_blank" rel="noopener">GNOME Boxes</a>
+        </div>
+      </article>
+
+      <!-- Requisitos -->
+      <article class="step reveal from-left">
+        <div class="feature-icon"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/4bb67a/requirements.png" alt="requirements"/></div>
+        <h3>Requisitos sugeridos</h3>
+        <p>CPU x64, 4GB RAM (8GB ideal), 16GB de espacio libre, pendrive ≥4GB para Live USB.</p>
+      </article>
+
+      <!-- Sugerencias -->
+      <article class="step reveal from-right">
+        <div class="feature-icon"><img width="35" height="35" src="https://img.icons8.com/ios-filled/50/4bb67a/idea--v1.png" alt="idea--v1"/></div>
+        <h3>Consejos útiles</h3>
+        <p>Si no ves el USB en el arranque, revisa el modo UEFI/Legacy o el “Secure Boot”.</p>
+      </article>
+    </div>
+
+  </div>
+</section>

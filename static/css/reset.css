@@ -1,0 +1,63 @@
+/* Reset CSS moderno (inspirado en Andy Bell + mejoras prácticas) */
+
+/* 1. Box-sizing y bordes coherentes */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Elimina márgenes por defecto */
+* {
+  margin: 0;
+}
+
+/* 3. Tipografía accesible y line-height razonable */
+html {
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  line-height: 1.5;
+  font-synthesis-weight: none;
+  text-rendering: optimizeLegibility;
+}
+
+/* 4. Imágenes y medios responsivos por defecto */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 5. Hereda fuente en inputs y botones */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 6. Evita overflow de texto en contenedores con ancho fijo */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* 7. Quita estilos de listas donde se use role=list */
+ul[role="list"], ol[role="list"] {
+  list-style: none;
+  padding: 0;
+}
+
+/* 8. Anclas sin subrayado agresivo y con color heredado */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* 9. Botones y elementos clicables con cursor */
+button, [role="button"] {
+  cursor: pointer;
+}
+
+/* 10. Tablas sin colapsos raros */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

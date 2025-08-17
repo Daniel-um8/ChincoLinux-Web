@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Opcional: Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="{% static 'css/reset.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/estilo_gral.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/navbar.css' %}" />
+    <link rel="stylesheet" href="{% static 'sitio/css/estilo.css' %}" />
+    <link rel="stylesheet" href="{% static 'sitio/css/hero.css' %}" />
+    <link rel="stylesheet" href="{% static 'sitio/css/que_es.css' %}" />
+    <link rel="stylesheet" href="{% static 'sitio/css/animaciones.css' %}" />
+    <link rel="stylesheet" href="{% static 'sitio/css/caracteristicas.css' %}" />
+    <link rel="stylesheet" href="{% static 'sitio/css/howto.css' %}" />
+
+    {% comment %}Icono de la pestaña{% endcomment %}
+
+    {% comment %}Título intercambiable entre sitios{% endcomment %}
+    <title>
+      {% block title %}
+
+      {% endblock %}
+    </title>
+  </head>
+  <body>
+    {% comment %}Incluir 'navbar.html' desde includes{% endcomment %}
+    {% include 'includes/navbar.html' %}
+
+    {% comment %}Contenido de mi plantilla 'inicio.html'{% endcomment %}
+    {% block content %}
+
+    {% endblock %}
+
+    {% comment %}Incluir 'footer.html' desde includes{% endcomment %}
+    {% include 'includes/footer.html' %}
+
+    <script src="{% static 'sitio/js/script.js' %}"></script>
+        <script src="{% static 'js/navbar.js' %}"></script>
+
+  </body>
+</html>
