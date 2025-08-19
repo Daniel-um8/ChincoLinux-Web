@@ -285,3 +285,48 @@
 .suma {
     padding-bottom: 2rem;
 }
+
+/* Evita desbordes globales accidentales */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+img, svg { max-width: 100%; height: auto; }
+
+/* Header fijo sin usar 100vw */
+.header1 { left: 0; right: 0; width: auto; }
+
+/* Layout del nav en móvil */
+@media (max-width: 900px){
+  .nav1{
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  /* El logo no crece ni se encoge */
+  .logo1 { flex: 0 0 auto; }
+  .logo1 img { width: 140px; height: auto; } /* ajusta si quieres */
+
+  /* La lista ocupa el resto, puede encogerse y manejar su propio scroll */
+  .ul1{
+    flex: 1 1 auto;        /* <- clave */
+    min-width: 0;          /* <- clave: permite encoger, evita overflow del documento */
+    display: flex;
+    flex-wrap: nowrap;     /* tabs en una línea */
+    gap: 16px;
+    margin: 0;
+    padding: 6px 0;        /* sin padding lateral extra */
+    list-style: none;
+    overflow-x: auto;      /* scroll horizontal dentro de la lista */
+    -webkit-overflow-scrolling: touch;
+    scrollbar-gutter: stable both-edges;
+    max-width: 100%;       /* no más ancha que el contenedor */
+  }
+
+  .ul1 li { flex: 0 0 auto; }
+  .ul1 a { display: block; white-space: nowrap; } /* evita saltos que “ensanchen” */
+}
+
+/* (Opcional) cinturón de seguridad temporal mientras pruebas */
+html, body { max-width: 100%; overflow-x: hidden; }
