@@ -1,14 +1,26 @@
 {% load static %}
 
 <header class="header1">
-  <nav class="nav1 max-width">
-    <a class="logo1" href=""><img src="{% static 'sitio/img/chincologo2_negro.png' %}" alt="logo" width="170px" /></a>
-<ul class="ul1">
-  <li><a href="#heroid">Inicio</a></li>
-  <li><a href="#que-es">Sistema Operativo</a></li>
-  <li><a href="#caracteristicas">Características</a></li>
-  <li><a href="#instrucciones">Instalación</a></li>
-  <li><a href="#contribuye">¡Contribuye!</a></li>
-</ul>
+  <nav class="nav1 max-width" aria-label="Principal">
+    <a class="logo1" href="#">
+      <img src="{% static 'sitio/img/chincologo2_negro.png' %}" alt="logo" width="170" />
+    </a>
+
+    <!-- Botón hamburguesa -->
+    {% comment %} <button class="nav-toggle" aria-controls="primary-nav" aria-expanded="false" aria-label="Abrir menú">
+      <span class="nav-toggle-box" aria-hidden="true">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </span>
+    </button> {% endcomment %}
+
+    <ul class="ul1" id="primary-nav">
+      <li><a href="#heroid">Inicio</a></li>
+      <li><a href="#que-es">Sistema Operativo</a></li>
+      <li><a href="#caracteristicas">Características</a></li>
+      <li><a href="#instrucciones">Instalación</a></li>
+      <li><a href="#contribuye">¡Contribuye!</a></li>
+    </ul>
   </nav>
 </header>

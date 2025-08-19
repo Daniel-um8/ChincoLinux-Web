@@ -45,21 +45,10 @@
     color: #333;
 }
 
-.img-frame {
-    border-radius: 20px;
-    padding: 1rem;
-}
-
-.img-frame img {
-    width: 100%;
-    display: block;
-    border-radius: 14px;
-}
-
 /* ===== Features ===== */
 .features {
     background: #4bb679;
-    padding: 4rem;
+    padding: 4rem 2rem;
 }
 
 .features-grid {
@@ -133,7 +122,7 @@
 /* ===== How-to / Steps ===== */
 .howto {
     background: #ffffff00;
-    padding: 4rem;
+    padding: 4rem 2rem;
 }
 
 #instrucciones-container {
@@ -211,29 +200,6 @@
     border-radius: 10px;
 }
 
-/* ===== Origen del nombre ===== */
-.origin {
-    background: #fff;
-}
-
-.origin .story {
-    background: #fafafa;
-    border: 1px solid #eee;
-    border-radius: 16px;
-    padding: 1.5rem;
-    box-shadow: 0 6px 18px rgba(0, 0, 0, .05);
-}
-
-.origin .side-img {
-    text-align: center;
-}
-
-.origin .side-img img {
-    max-width: 380px;
-    width: 100%;
-    border-radius: 16px;
-}
-
 /* ===== Estado del proyecto ===== */
 .state {
     background: #fff;
@@ -269,7 +235,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding: 4rem 0;
+    padding: 4rem 2rem;
     box-shadow: 0px 1px 10px 0px rgb(0, 0, 0);
 }
 

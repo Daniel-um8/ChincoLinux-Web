@@ -63,3 +63,40 @@ a:hover {
     color: rgb(255, 255, 255);
     text-decoration: none;
 }
+
+/* Desktop: igual que ahora */
+
+/* Responsive: scroll horizontal en la lista */
+@media (max-width: 900px) {
+    .nav1 {
+        justify-content: space-between;
+    }
+
+    .ul1 {
+        gap: 16px;
+        justify-content: flex-start;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        scrollbar-width: thin;
+        scrollbar-color: #35b9ab transparent;
+    }
+
+    .ul1 li {
+        flex: 0 0 auto;
+    }
+
+    .ul1::-webkit-scrollbar {
+        height: 0px;
+    }
+
+    .ul1::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    .ul1::-webkit-scrollbar-thumb {
+        background: linear-gradient(90deg, #35b9ab, #4da8da);
+        border-radius: 999px;
+        border: 2px solid transparent;
+        background-clip: content-box;
+    }
+}
